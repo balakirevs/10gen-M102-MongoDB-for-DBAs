@@ -1,0 +1,1394 @@
+Tue May 21 22:40:56.673 [initandlisten] MongoDB starting : pid=6658 port=27001 dbpath=/home/user/code/rails_projects/10gen_mongodb_dba/Week_4/Hw4-1/1 32-bit host=HP
+Tue May 21 22:40:56.674 [initandlisten] 
+Tue May 21 22:40:56.674 [initandlisten] ** NOTE: This is a 32 bit MongoDB binary.
+Tue May 21 22:40:56.674 [initandlisten] **       32 bit builds are limited to less than 2GB of data (or less with --journal).
+Tue May 21 22:40:56.674 [initandlisten] **       Note that journaling defaults to off for 32 bit and is currently off.
+Tue May 21 22:40:56.674 [initandlisten] **       See http://dochub.mongodb.org/core/32bit
+Tue May 21 22:40:56.674 [initandlisten] 
+Tue May 21 22:40:56.674 [initandlisten] db version v2.4.3
+Tue May 21 22:40:56.674 [initandlisten] git version: fe1743177a5ea03e91e0052fb5e2cb2945f6d95f
+Tue May 21 22:40:56.674 [initandlisten] build info: Linux bs-linux32.10gen.cc 2.6.21.7-2.fc8xen #1 SMP Fri Feb 15 12:39:36 EST 2008 i686 BOOST_LIB_VERSION=1_49
+Tue May 21 22:40:56.674 [initandlisten] allocator: system
+Tue May 21 22:40:56.674 [initandlisten] options: { dbpath: "1", fork: true, logappend: true, logpath: "log.1", oplogSize: 50, port: 27001, replSet: "abc", smallfiles: true }
+Tue May 21 22:40:56.768 [initandlisten] waiting for connections on port 27001
+Tue May 21 22:40:56.769 [websvr] admin web console waiting for connections on port 28001
+Tue May 21 22:40:56.772 [rsStart] replSet can't get local.system.replset config from self or any seed (EMPTYCONFIG)
+Tue May 21 22:40:56.772 [rsStart] replSet info you may need to run replSetInitiate -- rs.initiate() in the shell -- if that is not already done
+Tue May 21 22:40:57.252 [initandlisten] connection accepted from 127.0.0.1:36266 #1 (1 connection now open)
+Tue May 21 22:40:58.227 [initandlisten] connection accepted from 127.0.0.1:36267 #2 (2 connections now open)
+Tue May 21 22:40:58.227 [conn2] end connection 127.0.0.1:36267 (1 connection now open)
+Tue May 21 22:40:58.227 [initandlisten] connection accepted from 127.0.0.1:36268 #3 (3 connections now open)
+Tue May 21 22:41:01.253 [conn1] end connection 127.0.0.1:36266 (1 connection now open)
+Tue May 21 22:41:01.254 [initandlisten] connection accepted from 127.0.0.1:36270 #4 (3 connections now open)
+Tue May 21 22:41:06.773 [rsStart] trying to contact localhost:27002
+Tue May 21 22:41:06.774 [rsStart] trying to contact localhost:27003
+Tue May 21 22:41:06.776 [rsStart] replSet I am localhost:27001
+Tue May 21 22:41:06.777 [rsStart] replSet got config version 2 from a remote, saving locally
+Tue May 21 22:41:06.777 [rsStart] replSet info saving a newer config version to local.system.replset
+Tue May 21 22:41:06.853 [rsStart] replSet saveConfigLocally done
+Tue May 21 22:41:06.855 [rsStart] replSet STARTUP2
+Tue May 21 22:41:06.856 [rsSync] ******
+Tue May 21 22:41:06.856 [rsSync] creating replication oplog of size: 50MB...
+Tue May 21 22:41:06.857 [FileAllocator] allocating new datafile /home/user/code/rails_projects/10gen_mongodb_dba/Week_4/Hw4-1/1/local.1, filling with zeroes...
+Tue May 21 22:41:06.857 [FileAllocator] creating directory /home/user/code/rails_projects/10gen_mongodb_dba/Week_4/Hw4-1/1/_tmp
+Tue May 21 22:41:06.911 [FileAllocator] done allocating datafile /home/user/code/rails_projects/10gen_mongodb_dba/Week_4/Hw4-1/1/local.1, size: 64MB,  took 0.023 secs
+Tue May 21 22:41:07.056 [rsSync] ******
+Tue May 21 22:41:07.057 [rsSync] replSet initial sync pending
+Tue May 21 22:41:07.057 [rsSync] replSet initial sync need a member to be primary or secondary to do our initial sync
+Tue May 21 22:41:08.777 [rsHealthPoll] replSet member localhost:27003 is up
+Tue May 21 22:41:08.777 [rsHealthPoll] replSet member localhost:27002 is up
+Tue May 21 22:41:08.777 [rsHealthPoll] replSet member localhost:27003 is now in state SECONDARY
+Tue May 21 22:41:08.777 [rsHealthPoll] replSet member localhost:27002 is now in state PRIMARY
+Tue May 21 22:41:16.232 [conn3] end connection 127.0.0.1:36268 (1 connection now open)
+Tue May 21 22:41:16.233 [initandlisten] connection accepted from 127.0.0.1:36274 #5 (2 connections now open)
+Tue May 21 22:41:23.057 [rsSync] replSet initial sync pending
+Tue May 21 22:41:23.057 [rsSync] replSet syncing to: localhost:27002
+Tue May 21 22:41:23.061 [rsSync] build index local.me { _id: 1 }
+Tue May 21 22:41:23.064 [rsSync] build index done.  scanned 0 total records. 0.002 secs
+Tue May 21 22:41:23.066 [rsSync] build index local.replset.minvalid { _id: 1 }
+Tue May 21 22:41:23.067 [rsSync] build index done.  scanned 0 total records. 0 secs
+Tue May 21 22:41:23.067 [rsSync] replSet initial sync drop all databases
+Tue May 21 22:41:23.067 [rsSync] dropAllDatabasesExceptLocal 2
+Tue May 21 22:41:23.077 [rsSync] replSet initial sync clone all databases
+Tue May 21 22:41:23.078 [rsSync] replSet initial sync cloning db: test
+Tue May 21 22:41:23.091 [rsSync] replSet initial sync data copy, starting syncup
+Tue May 21 22:41:23.091 [rsSync] oplog sync 1 of 3
+Tue May 21 22:41:23.091 [rsSync] oplog sync 2 of 3
+Tue May 21 22:41:23.092 [rsSync] replSet initial sync building indexes
+Tue May 21 22:41:23.092 [rsSync] replSet initial sync cloning indexes for : test
+Tue May 21 22:41:23.092 [rsSync] oplog sync 3 of 3
+Tue May 21 22:41:23.093 [rsSync] replSet initial sync finishing up
+Tue May 21 22:41:23.205 [rsSync] replSet set minValid=519bd890:1
+Tue May 21 22:41:23.250 [rsSync] replSet RECOVERING
+Tue May 21 22:41:23.250 [rsSync] replSet initial sync done
+Tue May 21 22:41:23.858 [rsBackgroundSync] replSet syncing to: localhost:27002
+Tue May 21 22:41:24.250 [rsSyncNotifier] replset setting oplog notifier to localhost:27002
+Tue May 21 22:41:25.251 [rsSync] replSet SECONDARY
+Tue May 21 22:41:31.261 [initandlisten] connection accepted from 127.0.0.1:36281 #6 (3 connections now open)
+Tue May 21 22:41:31.261 [conn4] end connection 127.0.0.1:36270 (1 connection now open)
+Tue May 21 22:41:39.845 [initandlisten] connection accepted from 127.0.0.1:36283 #7 (3 connections now open)
+Tue May 21 22:41:46.241 [conn5] end connection 127.0.0.1:36274 (2 connections now open)
+Tue May 21 22:41:46.241 [initandlisten] connection accepted from 127.0.0.1:36285 #8 (4 connections now open)
+Tue May 21 22:41:50.912 [conn7] end connection 127.0.0.1:36283 (2 connections now open)
+Tue May 21 22:42:01.269 [conn6] end connection 127.0.0.1:36281 (1 connection now open)
+Tue May 21 22:42:01.269 [initandlisten] connection accepted from 127.0.0.1:36289 #9 (2 connections now open)
+Tue May 21 22:42:16.248 [conn8] end connection 127.0.0.1:36285 (1 connection now open)
+Tue May 21 22:42:16.248 [initandlisten] connection accepted from 127.0.0.1:36292 #10 (2 connections now open)
+Tue May 21 22:42:18.377 [rsBackgroundSync] replSet db exception in producer: 10278 dbclient error communicating with server: localhost:27002
+Tue May 21 22:42:18.798 [rsHealthPoll] replSet member localhost:27002 is now in state SECONDARY
+Tue May 21 22:42:18.798 [rsMgr] not electing self, localhost:27003 would veto with 'localhost:27001 is trying to elect itself but localhost:27002 is already primary and more up-to-date'
+Tue May 21 22:42:19.390 [conn9] replSet info voting yea for localhost:27003 (2)
+Tue May 21 22:42:24.701 [initandlisten] connection accepted from 127.0.0.1:36295 #11 (3 connections now open)
+Tue May 21 22:42:24.800 [rsMgr] replSet not trying to elect self as responded yea to someone else recently
+Tue May 21 22:42:28.800 [rsHealthPoll] replSet member localhost:27003 is now in state PRIMARY
+Tue May 21 22:42:29.377 [rsBackgroundSync] replSet syncing to: localhost:27003
+Tue May 21 22:42:31.276 [conn9] end connection 127.0.0.1:36289 (2 connections now open)
+Tue May 21 22:42:31.276 [initandlisten] connection accepted from 127.0.0.1:36299 #12 (3 connections now open)
+Tue May 21 22:42:33.915 [conn11] end connection 127.0.0.1:36295 (2 connections now open)
+Tue May 21 22:42:46.256 [conn10] end connection 127.0.0.1:36292 (1 connection now open)
+Tue May 21 22:42:46.256 [initandlisten] connection accepted from 127.0.0.1:36303 #13 (3 connections now open)
+Tue May 21 22:43:01.282 [conn12] end connection 127.0.0.1:36299 (1 connection now open)
+Tue May 21 22:43:01.283 [initandlisten] connection accepted from 127.0.0.1:36307 #14 (3 connections now open)
+Tue May 21 22:43:16.264 [conn13] end connection 127.0.0.1:36303 (1 connection now open)
+Tue May 21 22:43:16.264 [initandlisten] connection accepted from 127.0.0.1:36311 #15 (3 connections now open)
+Tue May 21 22:43:31.291 [conn14] end connection 127.0.0.1:36307 (1 connection now open)
+Tue May 21 22:43:31.291 [initandlisten] connection accepted from 127.0.0.1:36314 #16 (3 connections now open)
+Tue May 21 22:43:46.272 [conn15] end connection 127.0.0.1:36311 (1 connection now open)
+Tue May 21 22:43:46.272 [initandlisten] connection accepted from 127.0.0.1:36317 #17 (3 connections now open)
+Tue May 21 22:44:01.299 [conn16] end connection 127.0.0.1:36314 (1 connection now open)
+Tue May 21 22:44:01.299 [initandlisten] connection accepted from 127.0.0.1:36324 #18 (2 connections now open)
+Tue May 21 22:44:16.279 [conn17] end connection 127.0.0.1:36317 (1 connection now open)
+Tue May 21 22:44:16.279 [initandlisten] connection accepted from 127.0.0.1:36327 #19 (2 connections now open)
+Tue May 21 22:44:31.308 [conn18] end connection 127.0.0.1:36324 (1 connection now open)
+Tue May 21 22:44:31.308 [initandlisten] connection accepted from 127.0.0.1:36330 #20 (3 connections now open)
+Tue May 21 22:44:46.286 [conn19] end connection 127.0.0.1:36327 (1 connection now open)
+Tue May 21 22:44:46.286 [initandlisten] connection accepted from 127.0.0.1:36333 #21 (2 connections now open)
+Tue May 21 22:45:01.317 [conn20] end connection 127.0.0.1:36330 (1 connection now open)
+Tue May 21 22:45:01.317 [initandlisten] connection accepted from 127.0.0.1:36336 #22 (2 connections now open)
+Tue May 21 22:45:16.293 [conn21] end connection 127.0.0.1:36333 (1 connection now open)
+Tue May 21 22:45:16.293 [initandlisten] connection accepted from 127.0.0.1:36384 #23 (3 connections now open)
+Tue May 21 22:45:31.324 [conn22] end connection 127.0.0.1:36336 (1 connection now open)
+Tue May 21 22:45:31.325 [initandlisten] connection accepted from 127.0.0.1:36400 #24 (2 connections now open)
+Tue May 21 22:45:46.300 [conn23] end connection 127.0.0.1:36384 (1 connection now open)
+Tue May 21 22:45:46.301 [initandlisten] connection accepted from 127.0.0.1:36403 #25 (2 connections now open)
+Tue May 21 22:46:01.333 [conn24] end connection 127.0.0.1:36400 (1 connection now open)
+Tue May 21 22:46:01.333 [initandlisten] connection accepted from 127.0.0.1:36408 #26 (3 connections now open)
+Tue May 21 22:46:16.308 [conn25] end connection 127.0.0.1:36403 (1 connection now open)
+Tue May 21 22:46:16.309 [initandlisten] connection accepted from 127.0.0.1:36415 #27 (2 connections now open)
+Tue May 21 22:46:31.341 [conn26] end connection 127.0.0.1:36408 (1 connection now open)
+Tue May 21 22:46:31.341 [initandlisten] connection accepted from 127.0.0.1:36418 #28 (2 connections now open)
+Tue May 21 22:46:46.316 [conn27] end connection 127.0.0.1:36415 (1 connection now open)
+Tue May 21 22:46:46.316 [initandlisten] connection accepted from 127.0.0.1:36422 #29 (3 connections now open)
+Tue May 21 22:47:01.349 [initandlisten] connection accepted from 127.0.0.1:36425 #30 (3 connections now open)
+Tue May 21 22:47:01.349 [conn28] end connection 127.0.0.1:36418 (1 connection now open)
+Tue May 21 22:47:16.323 [conn29] end connection 127.0.0.1:36422 (1 connection now open)
+Tue May 21 22:47:16.323 [initandlisten] connection accepted from 127.0.0.1:36428 #31 (3 connections now open)
+Tue May 21 22:47:31.357 [conn30] end connection 127.0.0.1:36425 (1 connection now open)
+Tue May 21 22:47:31.357 [initandlisten] connection accepted from 127.0.0.1:36431 #32 (2 connections now open)
+Tue May 21 22:47:46.330 [conn31] end connection 127.0.0.1:36428 (1 connection now open)
+Tue May 21 22:47:46.331 [initandlisten] connection accepted from 127.0.0.1:36446 #33 (2 connections now open)
+Tue May 21 22:48:01.365 [conn32] end connection 127.0.0.1:36431 (1 connection now open)
+Tue May 21 22:48:01.365 [initandlisten] connection accepted from 127.0.0.1:36539 #34 (2 connections now open)
+Tue May 21 22:48:16.338 [conn33] end connection 127.0.0.1:36446 (1 connection now open)
+Tue May 21 22:48:16.339 [initandlisten] connection accepted from 127.0.0.1:36604 #35 (2 connections now open)
+Tue May 21 22:48:31.373 [conn34] end connection 127.0.0.1:36539 (1 connection now open)
+Tue May 21 22:48:31.373 [initandlisten] connection accepted from 127.0.0.1:36607 #36 (2 connections now open)
+Tue May 21 22:48:46.347 [conn35] end connection 127.0.0.1:36604 (1 connection now open)
+Tue May 21 22:48:46.347 [initandlisten] connection accepted from 127.0.0.1:36611 #37 (2 connections now open)
+Tue May 21 22:49:01.382 [conn36] end connection 127.0.0.1:36607 (1 connection now open)
+Tue May 21 22:49:01.382 [initandlisten] connection accepted from 127.0.0.1:36614 #38 (2 connections now open)
+Tue May 21 22:49:16.354 [conn37] end connection 127.0.0.1:36611 (1 connection now open)
+Tue May 21 22:49:16.354 [initandlisten] connection accepted from 127.0.0.1:36617 #39 (2 connections now open)
+Tue May 21 22:49:31.390 [conn38] end connection 127.0.0.1:36614 (1 connection now open)
+Tue May 21 22:49:31.391 [initandlisten] connection accepted from 127.0.0.1:36620 #40 (2 connections now open)
+Tue May 21 22:49:46.367 [conn39] end connection 127.0.0.1:36617 (1 connection now open)
+Tue May 21 22:49:46.367 [initandlisten] connection accepted from 127.0.0.1:36623 #41 (2 connections now open)
+Tue May 21 22:50:01.399 [conn40] end connection 127.0.0.1:36620 (1 connection now open)
+Tue May 21 22:50:01.399 [initandlisten] connection accepted from 127.0.0.1:36626 #42 (2 connections now open)
+Tue May 21 22:50:16.374 [conn41] end connection 127.0.0.1:36623 (1 connection now open)
+Tue May 21 22:50:16.374 [initandlisten] connection accepted from 127.0.0.1:36629 #43 (3 connections now open)
+Tue May 21 22:50:31.407 [initandlisten] connection accepted from 127.0.0.1:36632 #44 (3 connections now open)
+Tue May 21 22:50:31.408 [conn42] end connection 127.0.0.1:36626 (1 connection now open)
+Tue May 21 22:50:46.381 [conn43] end connection 127.0.0.1:36629 (1 connection now open)
+Tue May 21 22:50:46.381 [initandlisten] connection accepted from 127.0.0.1:36635 #45 (3 connections now open)
+Tue May 21 22:51:01.416 [conn44] end connection 127.0.0.1:36632 (1 connection now open)
+Tue May 21 22:51:01.417 [initandlisten] connection accepted from 127.0.0.1:36638 #46 (2 connections now open)
+Tue May 21 22:51:16.389 [conn45] end connection 127.0.0.1:36635 (1 connection now open)
+Tue May 21 22:51:16.389 [initandlisten] connection accepted from 127.0.0.1:36641 #47 (2 connections now open)
+Tue May 21 22:51:31.425 [conn46] end connection 127.0.0.1:36638 (1 connection now open)
+Tue May 21 22:51:31.426 [initandlisten] connection accepted from 127.0.0.1:36644 #48 (3 connections now open)
+Tue May 21 22:51:46.397 [conn47] end connection 127.0.0.1:36641 (1 connection now open)
+Tue May 21 22:51:46.398 [initandlisten] connection accepted from 127.0.0.1:36647 #49 (2 connections now open)
+Tue May 21 22:52:01.434 [conn48] end connection 127.0.0.1:36644 (1 connection now open)
+Tue May 21 22:52:01.435 [initandlisten] connection accepted from 127.0.0.1:36650 #50 (2 connections now open)
+Tue May 21 22:52:16.407 [conn49] end connection 127.0.0.1:36647 (1 connection now open)
+Tue May 21 22:52:16.407 [initandlisten] connection accepted from 127.0.0.1:36653 #51 (2 connections now open)
+Tue May 21 22:52:31.443 [conn50] end connection 127.0.0.1:36650 (1 connection now open)
+Tue May 21 22:52:31.443 [initandlisten] connection accepted from 127.0.0.1:36656 #52 (3 connections now open)
+Tue May 21 22:52:46.416 [conn51] end connection 127.0.0.1:36653 (1 connection now open)
+Tue May 21 22:52:46.416 [initandlisten] connection accepted from 127.0.0.1:36659 #53 (3 connections now open)
+Tue May 21 22:53:01.451 [conn52] end connection 127.0.0.1:36656 (1 connection now open)
+Tue May 21 22:53:01.451 [initandlisten] connection accepted from 127.0.0.1:36662 #54 (2 connections now open)
+Tue May 21 22:53:16.424 [conn53] end connection 127.0.0.1:36659 (1 connection now open)
+Tue May 21 22:53:16.424 [initandlisten] connection accepted from 127.0.0.1:36665 #55 (2 connections now open)
+Tue May 21 22:53:31.459 [initandlisten] connection accepted from 127.0.0.1:36669 #56 (3 connections now open)
+Tue May 21 22:53:31.460 [conn54] end connection 127.0.0.1:36662 (1 connection now open)
+Tue May 21 22:53:46.432 [conn55] end connection 127.0.0.1:36665 (1 connection now open)
+Tue May 21 22:53:46.432 [initandlisten] connection accepted from 127.0.0.1:36672 #57 (3 connections now open)
+Tue May 21 22:54:01.468 [conn56] end connection 127.0.0.1:36669 (1 connection now open)
+Tue May 21 22:54:01.468 [initandlisten] connection accepted from 127.0.0.1:36675 #58 (2 connections now open)
+Tue May 21 22:54:16.440 [conn57] end connection 127.0.0.1:36672 (1 connection now open)
+Tue May 21 22:54:16.440 [initandlisten] connection accepted from 127.0.0.1:36678 #59 (3 connections now open)
+Tue May 21 22:54:31.476 [conn58] end connection 127.0.0.1:36675 (1 connection now open)
+Tue May 21 22:54:31.477 [initandlisten] connection accepted from 127.0.0.1:36681 #60 (2 connections now open)
+Tue May 21 22:54:46.449 [conn59] end connection 127.0.0.1:36678 (1 connection now open)
+Tue May 21 22:54:46.449 [initandlisten] connection accepted from 127.0.0.1:36684 #61 (3 connections now open)
+Tue May 21 22:55:01.485 [conn60] end connection 127.0.0.1:36681 (1 connection now open)
+Tue May 21 22:55:01.485 [initandlisten] connection accepted from 127.0.0.1:36692 #62 (3 connections now open)
+Tue May 21 22:55:16.457 [conn61] end connection 127.0.0.1:36684 (1 connection now open)
+Tue May 21 22:55:16.457 [initandlisten] connection accepted from 127.0.0.1:36695 #63 (3 connections now open)
+Tue May 21 22:55:31.493 [conn62] end connection 127.0.0.1:36692 (1 connection now open)
+Tue May 21 22:55:31.493 [initandlisten] connection accepted from 127.0.0.1:36698 #64 (3 connections now open)
+Tue May 21 22:55:46.465 [conn63] end connection 127.0.0.1:36695 (1 connection now open)
+Tue May 21 22:55:46.466 [initandlisten] connection accepted from 127.0.0.1:36701 #65 (3 connections now open)
+Tue May 21 22:56:01.502 [conn64] end connection 127.0.0.1:36698 (1 connection now open)
+Tue May 21 22:56:01.502 [initandlisten] connection accepted from 127.0.0.1:36704 #66 (2 connections now open)
+Tue May 21 22:56:16.474 [conn65] end connection 127.0.0.1:36701 (1 connection now open)
+Tue May 21 22:56:16.474 [initandlisten] connection accepted from 127.0.0.1:36707 #67 (2 connections now open)
+Tue May 21 22:56:31.510 [initandlisten] connection accepted from 127.0.0.1:36710 #68 (3 connections now open)
+Tue May 21 22:56:31.510 [conn66] end connection 127.0.0.1:36704 (1 connection now open)
+Tue May 21 22:56:46.482 [conn67] end connection 127.0.0.1:36707 (1 connection now open)
+Tue May 21 22:56:46.482 [initandlisten] connection accepted from 127.0.0.1:36713 #69 (2 connections now open)
+Tue May 21 22:57:01.518 [conn68] end connection 127.0.0.1:36710 (1 connection now open)
+Tue May 21 22:57:01.518 [initandlisten] connection accepted from 127.0.0.1:36716 #70 (2 connections now open)
+Tue May 21 22:57:16.490 [conn69] end connection 127.0.0.1:36713 (1 connection now open)
+Tue May 21 22:57:16.490 [initandlisten] connection accepted from 127.0.0.1:36719 #71 (3 connections now open)
+Tue May 21 22:57:31.526 [conn70] end connection 127.0.0.1:36716 (1 connection now open)
+Tue May 21 22:57:31.526 [initandlisten] connection accepted from 127.0.0.1:36722 #72 (3 connections now open)
+Tue May 21 22:57:46.498 [conn71] end connection 127.0.0.1:36719 (1 connection now open)
+Tue May 21 22:57:46.498 [initandlisten] connection accepted from 127.0.0.1:36726 #73 (3 connections now open)
+Tue May 21 22:58:01.533 [conn72] end connection 127.0.0.1:36722 (1 connection now open)
+Tue May 21 22:58:01.534 [initandlisten] connection accepted from 127.0.0.1:36734 #74 (2 connections now open)
+Tue May 21 22:58:16.506 [conn73] end connection 127.0.0.1:36726 (1 connection now open)
+Tue May 21 22:58:16.506 [initandlisten] connection accepted from 127.0.0.1:36738 #75 (2 connections now open)
+Tue May 21 22:58:31.541 [conn74] end connection 127.0.0.1:36734 (1 connection now open)
+Tue May 21 22:58:31.541 [initandlisten] connection accepted from 127.0.0.1:36742 #76 (2 connections now open)
+Tue May 21 22:58:46.514 [conn75] end connection 127.0.0.1:36738 (1 connection now open)
+Tue May 21 22:58:46.514 [initandlisten] connection accepted from 127.0.0.1:36745 #77 (3 connections now open)
+Tue May 21 22:59:01.549 [conn76] end connection 127.0.0.1:36742 (1 connection now open)
+Tue May 21 22:59:01.550 [initandlisten] connection accepted from 127.0.0.1:36748 #78 (2 connections now open)
+Tue May 21 22:59:16.522 [conn77] end connection 127.0.0.1:36745 (1 connection now open)
+Tue May 21 22:59:16.522 [initandlisten] connection accepted from 127.0.0.1:36751 #79 (2 connections now open)
+Tue May 21 22:59:31.558 [conn78] end connection 127.0.0.1:36748 (1 connection now open)
+Tue May 21 22:59:31.558 [initandlisten] connection accepted from 127.0.0.1:36754 #80 (2 connections now open)
+Tue May 21 22:59:46.530 [initandlisten] connection accepted from 127.0.0.1:36757 #81 (3 connections now open)
+Tue May 21 22:59:46.531 [conn79] end connection 127.0.0.1:36751 (2 connections now open)
+Tue May 21 23:00:01.566 [conn80] end connection 127.0.0.1:36754 (1 connection now open)
+Tue May 21 23:00:01.566 [initandlisten] connection accepted from 127.0.0.1:36764 #82 (2 connections now open)
+Tue May 21 23:00:16.539 [conn81] end connection 127.0.0.1:36757 (1 connection now open)
+Tue May 21 23:00:16.539 [initandlisten] connection accepted from 127.0.0.1:36767 #83 (3 connections now open)
+Tue May 21 23:00:31.574 [conn82] end connection 127.0.0.1:36764 (1 connection now open)
+Tue May 21 23:00:31.574 [initandlisten] connection accepted from 127.0.0.1:36770 #84 (2 connections now open)
+Tue May 21 23:00:46.547 [conn83] end connection 127.0.0.1:36767 (1 connection now open)
+Tue May 21 23:00:46.547 [initandlisten] connection accepted from 127.0.0.1:36773 #85 (2 connections now open)
+Tue May 21 23:01:01.582 [conn84] end connection 127.0.0.1:36770 (1 connection now open)
+Tue May 21 23:01:01.582 [initandlisten] connection accepted from 127.0.0.1:36776 #86 (2 connections now open)
+Tue May 21 23:01:16.556 [conn85] end connection 127.0.0.1:36773 (1 connection now open)
+Tue May 21 23:01:16.556 [initandlisten] connection accepted from 127.0.0.1:36779 #87 (3 connections now open)
+Tue May 21 23:01:31.591 [initandlisten] connection accepted from 127.0.0.1:36782 #88 (3 connections now open)
+Tue May 21 23:01:31.591 [conn86] end connection 127.0.0.1:36776 (1 connection now open)
+Tue May 21 23:01:46.564 [conn87] end connection 127.0.0.1:36779 (1 connection now open)
+Tue May 21 23:01:46.565 [initandlisten] connection accepted from 127.0.0.1:36787 #89 (2 connections now open)
+Tue May 21 23:02:01.599 [conn88] end connection 127.0.0.1:36782 (1 connection now open)
+Tue May 21 23:02:01.599 [initandlisten] connection accepted from 127.0.0.1:36790 #90 (2 connections now open)
+Tue May 21 23:02:16.572 [conn89] end connection 127.0.0.1:36787 (1 connection now open)
+Tue May 21 23:02:16.573 [initandlisten] connection accepted from 127.0.0.1:36793 #91 (2 connections now open)
+Tue May 21 23:02:31.607 [conn90] end connection 127.0.0.1:36790 (1 connection now open)
+Tue May 21 23:02:31.607 [initandlisten] connection accepted from 127.0.0.1:36796 #92 (2 connections now open)
+Tue May 21 23:02:46.583 [conn91] end connection 127.0.0.1:36793 (1 connection now open)
+Tue May 21 23:02:46.583 [initandlisten] connection accepted from 127.0.0.1:36799 #93 (2 connections now open)
+Tue May 21 23:03:01.615 [conn92] end connection 127.0.0.1:36796 (1 connection now open)
+Tue May 21 23:03:01.616 [initandlisten] connection accepted from 127.0.0.1:36802 #94 (2 connections now open)
+Tue May 21 23:03:10.964 [rsBackgroundSync] replSet db exception in producer: 10278 dbclient error communicating with server: localhost:27003
+Tue May 21 23:03:11.142 [rsMgr] replset msgReceivedNewConfig version: version: 3
+Tue May 21 23:03:11.143 [rsMgr] replSet info saving a newer config version to local.system.replset
+Tue May 21 23:03:11.216 [rsMgr] replSet saveConfigLocally done
+Tue May 21 23:03:11.216 [rsMgr] replSet REMOVED
+Tue May 21 23:03:11.216 [rsMgr] replSet info self not present in the repl set configuration:
+Tue May 21 23:03:11.216 [rsMgr] { _id: "abc", version: 3, members: [ { _id: 1, host: "localhost:27002" }, { _id: 2, host: "localhost:27003" } ] }
+Tue May 21 23:03:11.216 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:03:11.216 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:03:11.216 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:03:12.591 [conn93] end connection 127.0.0.1:36799 (1 connection now open)
+Tue May 21 23:03:12.591 [initandlisten] connection accepted from 127.0.0.1:36806 #95 (2 connections now open)
+Tue May 21 23:03:31.217 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:03:31.218 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:03:31.219 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:03:51.220 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:03:51.221 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:03:51.222 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:04:11.222 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:04:11.223 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:04:11.223 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:04:31.224 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:04:31.225 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:04:31.226 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:04:51.226 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:04:51.227 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:04:51.228 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:05:00.504 [initandlisten] connection accepted from 127.0.0.1:36833 #96 (3 connections now open)
+Tue May 21 23:05:11.228 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:05:11.229 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:05:11.230 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:05:17.486 [conn96] end connection 127.0.0.1:36833 (2 connections now open)
+Tue May 21 23:05:31.230 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:05:31.231 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:05:31.232 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:05:51.233 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:05:51.233 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:05:51.234 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:06:11.235 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:06:11.235 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:06:11.236 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:06:31.237 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:06:31.237 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:06:31.238 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:06:51.239 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:06:51.240 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:06:51.241 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:07:11.241 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:07:11.242 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:07:11.242 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:07:31.243 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:07:31.244 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:07:31.245 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:07:51.245 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:07:51.246 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:07:51.247 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:08:11.247 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:08:11.248 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:08:11.249 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:08:31.249 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:08:31.250 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:08:31.251 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:08:51.251 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:08:51.252 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:08:51.253 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:09:11.253 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:09:11.254 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:09:11.255 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:09:31.255 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:09:31.256 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:09:31.257 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:09:51.257 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:09:51.258 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:09:51.259 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:10:11.260 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:10:11.260 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:10:11.261 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:10:31.261 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:10:31.262 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:10:31.263 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:10:51.264 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:10:51.265 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:10:51.265 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:11:11.266 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:11:11.267 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:11:11.267 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:11:31.268 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:11:31.269 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:11:31.269 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:11:51.270 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:11:51.271 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:11:51.272 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:12:11.272 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:12:11.273 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:12:11.274 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:12:31.274 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:12:31.275 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:12:31.276 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:12:51.276 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:12:51.277 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:12:51.278 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:13:11.278 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:13:11.279 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:13:11.280 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:13:31.280 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:13:31.281 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:13:31.282 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:13:51.282 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:13:51.283 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:13:51.284 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:14:11.285 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:14:11.285 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:14:11.286 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:14:31.286 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:14:31.287 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:14:31.288 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:14:51.289 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:14:51.290 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:14:51.290 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:15:11.291 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:15:11.292 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:15:11.292 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:15:31.293 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:15:31.294 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:15:31.295 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:15:51.295 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:15:51.296 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:15:51.297 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:16:11.297 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:16:11.298 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:16:11.298 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:16:31.299 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:16:31.300 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:16:31.301 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:16:51.301 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:16:51.302 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:16:51.303 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:17:11.303 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:17:11.304 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:17:11.305 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:17:31.305 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:17:31.306 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:17:31.306 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:17:51.307 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:17:51.308 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:17:51.309 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:18:11.309 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:18:11.310 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:18:11.311 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:18:31.311 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:18:31.312 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:18:31.312 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:18:51.313 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:18:51.314 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:18:51.315 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:19:11.315 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:19:11.316 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:19:11.316 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:19:31.317 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:19:31.317 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:19:31.318 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:19:51.318 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:19:51.319 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:19:51.320 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:20:11.320 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:20:11.321 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:20:11.321 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:20:31.322 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:20:31.323 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:20:31.323 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:20:51.324 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:20:51.325 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:20:51.326 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:21:11.326 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:21:11.327 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:21:11.328 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:21:31.328 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:21:31.331 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:21:31.331 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:21:51.332 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:21:51.333 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:21:51.333 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:22:11.334 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:22:11.335 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:22:11.335 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:22:31.336 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:22:31.336 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:22:31.337 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:22:51.337 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:22:51.338 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:22:51.339 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:23:11.340 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:23:11.340 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:23:11.341 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:23:31.341 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:23:31.342 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:23:31.342 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:23:51.343 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:23:51.344 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:23:51.344 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:24:11.345 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:24:11.345 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:24:11.346 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:24:31.346 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:24:31.347 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:24:31.348 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:24:51.348 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:24:51.349 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:24:51.349 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:25:11.350 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:25:11.350 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:25:11.351 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:25:31.351 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:25:31.352 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:25:31.353 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:25:51.353 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:25:51.354 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:25:51.354 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:26:11.355 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:26:11.356 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:26:11.356 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:26:31.357 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:26:31.358 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:26:31.359 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:26:51.359 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:26:51.360 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:26:51.360 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:27:11.361 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:27:11.362 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:27:11.362 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:27:31.363 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:27:31.364 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:27:31.364 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:27:51.365 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:27:51.366 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:27:51.367 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:28:11.367 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:28:11.368 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:28:11.368 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:28:31.369 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:28:31.370 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:28:31.371 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:28:51.371 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:28:51.372 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:28:51.373 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:29:11.373 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:29:11.374 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:29:11.375 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:29:31.375 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:29:31.376 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:29:31.377 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:29:51.378 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:29:51.379 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:29:51.379 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:30:11.380 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:30:11.381 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:30:11.381 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:30:31.382 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:30:31.383 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:30:31.384 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:30:51.384 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:30:51.385 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:30:51.386 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:31:11.386 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:31:11.387 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:31:11.387 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:31:31.388 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:31:31.389 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:31:31.390 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:31:51.390 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:31:51.391 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:31:51.392 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:32:11.392 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:32:11.393 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:32:11.394 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:32:31.394 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:32:31.395 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:32:31.396 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Tue May 21 23:32:51.396 [rsMgr] trying to contact localhost:27002
+Tue May 21 23:32:51.397 [rsMgr] trying to contact localhost:27003
+Tue May 21 23:32:51.398 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 10:51:15.393 [conn94] end connection 127.0.0.1:36802 (1 connection now open)
+Wed May 22 10:51:15.395 [rsMgr] trying to contact localhost:27002
+Wed May 22 10:51:15.405 [rsMgr] trying to contact localhost:27003
+Wed May 22 10:51:15.406 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 10:51:35.406 [rsMgr] trying to contact localhost:27002
+Wed May 22 10:51:35.407 [rsMgr] trying to contact localhost:27003
+Wed May 22 10:51:35.408 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 10:51:55.408 [rsMgr] trying to contact localhost:27002
+Wed May 22 10:51:55.409 [rsMgr] trying to contact localhost:27003
+Wed May 22 10:51:55.410 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 10:52:15.410 [rsMgr] trying to contact localhost:27002
+Wed May 22 10:52:15.411 [rsMgr] trying to contact localhost:27003
+Wed May 22 10:52:15.412 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 10:52:35.412 [rsMgr] trying to contact localhost:27002
+Wed May 22 10:52:35.413 [rsMgr] trying to contact localhost:27003
+Wed May 22 10:52:35.413 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 10:52:55.414 [rsMgr] trying to contact localhost:27002
+Wed May 22 10:52:55.415 [rsMgr] trying to contact localhost:27003
+Wed May 22 10:52:55.416 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 10:53:15.416 [rsMgr] trying to contact localhost:27002
+Wed May 22 10:53:15.417 [rsMgr] trying to contact localhost:27003
+Wed May 22 10:53:15.418 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 10:53:35.418 [rsMgr] trying to contact localhost:27002
+Wed May 22 10:53:35.419 [rsMgr] trying to contact localhost:27003
+Wed May 22 10:53:35.419 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 10:53:55.420 [rsMgr] trying to contact localhost:27002
+Wed May 22 10:53:55.421 [rsMgr] trying to contact localhost:27003
+Wed May 22 10:53:55.422 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 10:54:15.422 [rsMgr] trying to contact localhost:27002
+Wed May 22 10:54:15.423 [rsMgr] trying to contact localhost:27003
+Wed May 22 10:54:15.424 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 10:54:35.424 [rsMgr] trying to contact localhost:27002
+Wed May 22 10:54:35.425 [rsMgr] trying to contact localhost:27003
+Wed May 22 10:54:35.425 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 10:54:55.426 [rsMgr] trying to contact localhost:27002
+Wed May 22 10:54:55.427 [rsMgr] trying to contact localhost:27003
+Wed May 22 10:54:55.427 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 10:55:15.428 [rsMgr] trying to contact localhost:27002
+Wed May 22 10:55:15.429 [rsMgr] trying to contact localhost:27003
+Wed May 22 10:55:15.430 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 10:55:35.430 [rsMgr] trying to contact localhost:27002
+Wed May 22 10:55:35.431 [rsMgr] trying to contact localhost:27003
+Wed May 22 10:55:35.432 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 10:55:55.432 [rsMgr] trying to contact localhost:27002
+Wed May 22 10:55:55.433 [rsMgr] trying to contact localhost:27003
+Wed May 22 10:55:55.434 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 10:56:15.435 [rsMgr] trying to contact localhost:27002
+Wed May 22 10:56:15.435 [rsMgr] trying to contact localhost:27003
+Wed May 22 10:56:15.436 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 10:56:35.437 [rsMgr] trying to contact localhost:27002
+Wed May 22 10:56:35.438 [rsMgr] trying to contact localhost:27003
+Wed May 22 10:56:35.439 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 10:56:55.439 [rsMgr] trying to contact localhost:27002
+Wed May 22 10:56:55.440 [rsMgr] trying to contact localhost:27003
+Wed May 22 10:56:55.441 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 10:57:15.441 [rsMgr] trying to contact localhost:27002
+Wed May 22 10:57:15.442 [rsMgr] trying to contact localhost:27003
+Wed May 22 10:57:15.443 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 10:57:35.443 [rsMgr] trying to contact localhost:27002
+Wed May 22 10:57:35.444 [rsMgr] trying to contact localhost:27003
+Wed May 22 10:57:35.444 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 10:57:55.445 [rsMgr] trying to contact localhost:27002
+Wed May 22 10:57:55.446 [rsMgr] trying to contact localhost:27003
+Wed May 22 10:57:55.447 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 10:58:15.447 [rsMgr] trying to contact localhost:27002
+Wed May 22 10:58:15.448 [rsMgr] trying to contact localhost:27003
+Wed May 22 10:58:15.448 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 10:58:35.449 [rsMgr] trying to contact localhost:27002
+Wed May 22 10:58:35.449 [rsMgr] trying to contact localhost:27003
+Wed May 22 10:58:35.450 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 10:58:55.450 [rsMgr] trying to contact localhost:27002
+Wed May 22 10:58:55.451 [rsMgr] trying to contact localhost:27003
+Wed May 22 10:58:55.452 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 10:59:15.452 [rsMgr] trying to contact localhost:27002
+Wed May 22 10:59:15.453 [rsMgr] trying to contact localhost:27003
+Wed May 22 10:59:15.453 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 10:59:35.454 [rsMgr] trying to contact localhost:27002
+Wed May 22 10:59:35.455 [rsMgr] trying to contact localhost:27003
+Wed May 22 10:59:35.456 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 10:59:55.456 [rsMgr] trying to contact localhost:27002
+Wed May 22 10:59:55.457 [rsMgr] trying to contact localhost:27003
+Wed May 22 10:59:55.458 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:00:15.458 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:00:15.459 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:00:15.460 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:00:35.461 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:00:35.462 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:00:35.462 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:00:55.463 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:00:55.464 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:00:55.465 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:01:15.465 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:01:15.466 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:01:15.467 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:01:35.467 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:01:35.468 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:01:35.469 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:01:55.469 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:01:55.469 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:01:55.470 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:02:15.470 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:02:15.471 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:02:15.472 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:02:35.473 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:02:35.474 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:02:35.474 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:02:55.475 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:02:55.476 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:02:55.477 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:03:15.477 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:03:15.478 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:03:15.479 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:03:35.479 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:03:35.480 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:03:35.480 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:03:55.481 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:03:55.481 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:03:55.482 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:04:15.482 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:04:15.483 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:04:15.484 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:04:35.485 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:04:35.486 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:04:35.486 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:04:55.487 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:04:55.488 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:04:55.489 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:05:15.489 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:05:15.490 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:05:15.491 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:05:35.492 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:05:35.492 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:05:35.493 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:05:55.493 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:05:55.494 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:05:55.495 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:06:15.495 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:06:15.496 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:06:15.497 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:06:35.498 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:06:35.499 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:06:35.499 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:06:55.502 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:06:55.503 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:06:55.503 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:07:15.504 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:07:15.504 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:07:15.505 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:07:35.505 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:07:35.506 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:07:35.507 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:07:55.507 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:07:55.508 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:07:55.509 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:08:15.510 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:08:15.511 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:08:15.511 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:08:35.512 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:08:35.512 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:08:35.513 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:08:55.514 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:08:55.514 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:08:55.515 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:09:15.516 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:09:15.517 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:09:15.517 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:09:35.518 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:09:35.519 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:09:35.520 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:09:55.520 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:09:55.521 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:09:55.522 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:10:15.522 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:10:15.523 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:10:15.524 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:10:35.525 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:10:35.526 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:10:35.527 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:10:55.527 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:10:55.528 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:10:55.529 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:11:15.529 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:11:15.530 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:11:15.530 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:11:35.531 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:11:35.532 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:11:35.532 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:11:55.533 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:11:55.533 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:11:55.534 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:12:15.534 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:12:15.535 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:12:15.536 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:12:35.536 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:12:35.537 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:12:35.538 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:12:55.539 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:12:55.540 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:12:55.540 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:13:15.541 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:13:15.542 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:13:15.542 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:13:35.543 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:13:35.544 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:13:35.545 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:13:55.545 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:13:55.546 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:13:55.546 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:14:15.546 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:14:15.547 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:14:15.548 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:14:35.548 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:14:35.549 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:14:35.550 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:14:55.550 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:14:55.551 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:14:55.552 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:15:15.553 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:15:15.554 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:15:15.555 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:15:35.555 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:15:35.556 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:15:35.557 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:15:55.558 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:15:55.558 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:15:55.559 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:16:15.560 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:16:15.560 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:16:15.561 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:16:35.561 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:16:35.562 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:16:35.562 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:16:55.563 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:16:55.564 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:16:55.564 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:17:15.588 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:17:15.606 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:17:15.618 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:17:35.619 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:17:35.620 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:17:35.620 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:17:55.621 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:17:55.622 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:17:55.623 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:18:15.623 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:18:15.624 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:18:15.625 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:18:35.625 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:18:35.626 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:18:35.627 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:18:55.628 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:18:55.629 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:18:55.629 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:19:15.630 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:19:15.631 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:19:15.632 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:19:35.632 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:19:35.633 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:19:35.634 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:19:55.634 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:19:55.635 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:19:55.636 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:20:15.636 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:20:15.637 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:20:15.638 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:20:35.639 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:20:35.640 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:20:35.640 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:20:55.641 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:20:55.642 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:20:55.643 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:21:15.643 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:21:15.644 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:21:15.645 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:21:35.645 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:21:35.646 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:21:35.647 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:21:55.648 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:21:55.649 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:21:55.649 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:22:15.650 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:22:15.651 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:22:15.652 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:22:35.652 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:22:35.653 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:22:35.654 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:22:55.654 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:22:55.655 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:22:55.656 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:23:15.656 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:23:15.657 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:23:15.658 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:23:35.659 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:23:35.660 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:23:35.660 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:23:55.661 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:23:55.661 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:23:55.662 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:24:15.662 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:24:15.663 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:24:15.663 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:24:35.664 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:24:35.665 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:24:35.665 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:24:55.666 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:24:55.667 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:24:55.668 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:25:15.668 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:25:15.669 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:25:15.670 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:25:35.670 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:25:35.671 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:25:35.672 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:25:55.672 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:25:55.673 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:25:55.674 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:26:15.697 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:26:15.727 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:26:15.739 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:26:35.740 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:26:35.741 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:26:35.742 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:26:55.742 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:26:55.743 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:26:55.744 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:27:15.744 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:27:15.745 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:27:15.747 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:27:35.747 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:27:35.748 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:27:35.749 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:27:55.750 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:27:55.751 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:27:55.751 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:28:15.752 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:28:15.753 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:28:15.754 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:28:35.754 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:28:35.755 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:28:35.756 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:28:55.756 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:28:55.757 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:28:55.758 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:29:15.758 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:29:15.759 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:29:15.760 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:29:35.761 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:29:35.762 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:29:35.763 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:29:55.764 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:29:55.765 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:29:55.765 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:30:15.766 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:30:15.766 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:30:15.767 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:30:35.768 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:30:35.769 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:30:35.770 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:30:55.770 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:30:55.771 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:30:55.772 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:31:15.772 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:31:15.773 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:31:15.774 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:31:35.774 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:31:35.775 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:31:35.776 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:31:55.776 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:31:55.776 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:31:55.777 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:32:15.777 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:32:15.778 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:32:15.779 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:32:35.779 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:32:35.780 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:32:35.781 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:32:55.781 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:32:55.782 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:32:55.783 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:33:15.783 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:33:15.784 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:33:15.785 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:33:35.786 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:33:35.786 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:33:35.787 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:33:55.787 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:33:55.788 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:33:55.789 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:34:15.789 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:34:15.790 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:34:15.790 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:34:35.791 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:34:35.792 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:34:35.793 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:34:55.793 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:34:55.794 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:34:55.795 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:35:15.796 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:35:15.797 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:35:15.797 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:35:35.798 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:35:35.799 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:35:35.800 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:35:55.800 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:35:55.801 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:35:55.801 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:36:15.802 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:36:15.803 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:36:15.803 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:36:35.804 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:36:35.805 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:36:35.805 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:36:55.806 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:36:55.807 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:36:55.808 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:37:15.808 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:37:15.809 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:37:15.810 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:37:35.810 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:37:35.811 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:37:35.812 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:37:55.813 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:37:55.813 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:37:55.814 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:38:15.815 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:38:15.816 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:38:15.816 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:38:35.817 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:38:35.818 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:38:35.818 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:38:55.818 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:38:55.819 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:38:55.820 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:39:15.821 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:39:15.821 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:39:15.822 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:39:35.822 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:39:35.823 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:39:35.824 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:39:55.824 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:39:55.825 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:39:55.825 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:40:15.826 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:40:15.826 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:40:15.828 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:40:35.828 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:40:35.829 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:40:35.830 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:40:55.830 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:40:55.831 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:40:55.832 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:41:15.832 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:41:15.833 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:41:15.834 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:41:35.834 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:41:35.835 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:41:35.836 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:41:55.836 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:41:55.837 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:41:55.838 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:42:15.838 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:42:15.839 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:42:15.839 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:42:35.840 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:42:35.841 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:42:35.842 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:42:55.842 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:42:55.843 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:42:55.844 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:43:15.844 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:43:15.845 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:43:15.846 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:43:35.847 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:43:35.847 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:43:35.848 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:43:55.849 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:43:55.850 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:43:55.850 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:44:15.851 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:44:15.852 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:44:15.853 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:44:35.853 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:44:35.854 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:44:35.855 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:44:55.855 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:44:55.856 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:44:55.857 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:45:15.858 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:45:15.859 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:45:15.859 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:45:35.860 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:45:35.860 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:45:35.861 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:45:55.861 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:45:55.862 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:45:55.863 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:46:15.864 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:46:15.864 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:46:15.865 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:46:35.866 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:46:35.867 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:46:35.867 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:46:55.868 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:46:55.869 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:46:55.870 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:47:15.870 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:47:15.871 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:47:15.871 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:47:35.871 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:47:35.872 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:47:35.873 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:47:55.873 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:47:55.874 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:47:55.875 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:48:15.875 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:48:15.876 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:48:15.877 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:48:35.878 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:48:35.878 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:48:35.879 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:48:55.880 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:48:55.881 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:48:55.882 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:49:15.882 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:49:15.883 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:49:15.884 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:49:35.884 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:49:35.885 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:49:35.886 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:49:55.887 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:49:55.887 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:49:55.888 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:50:15.888 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:50:15.889 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:50:15.890 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:50:35.890 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:50:35.891 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:50:35.892 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:50:55.893 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:50:55.894 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:50:55.895 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:51:15.895 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:51:15.896 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:51:15.897 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:51:35.897 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:51:35.898 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:51:35.899 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:51:55.899 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:51:55.900 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:51:55.900 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:52:15.901 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:52:15.902 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:52:15.903 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:52:35.903 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:52:35.904 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:52:35.905 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:52:55.905 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:52:55.906 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:52:55.907 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:53:15.908 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:53:15.909 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:53:15.909 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:53:35.910 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:53:35.911 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:53:35.912 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:53:55.912 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:53:55.913 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:53:55.914 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:54:15.914 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:54:15.915 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:54:15.915 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:54:35.916 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:54:35.917 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:54:35.918 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:54:55.918 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:54:55.919 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:54:55.920 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:55:15.920 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:55:15.921 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:55:15.922 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:55:35.923 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:55:35.924 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:55:35.925 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:55:55.925 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:55:55.926 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:55:55.927 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:56:15.928 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:56:15.929 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:56:15.929 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:56:35.930 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:56:35.931 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:56:35.932 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:56:55.932 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:56:55.933 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:56:55.934 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:57:15.934 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:57:15.935 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:57:15.936 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:57:35.937 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:57:35.937 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:57:35.938 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:57:55.939 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:57:55.940 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:57:55.940 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:58:15.941 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:58:15.942 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:58:15.943 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:58:35.943 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:58:35.944 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:58:35.945 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:58:55.945 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:58:55.946 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:58:55.947 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:59:15.948 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:59:15.948 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:59:15.949 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:59:35.950 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:59:35.951 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:59:35.951 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 11:59:55.952 [rsMgr] trying to contact localhost:27002
+Wed May 22 11:59:55.953 [rsMgr] trying to contact localhost:27003
+Wed May 22 11:59:55.954 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:00:15.954 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:00:15.955 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:00:15.956 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:00:35.956 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:00:35.957 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:00:35.958 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:00:55.958 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:00:55.959 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:00:55.960 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:01:15.960 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:01:15.961 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:01:15.962 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:01:35.963 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:01:35.964 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:01:35.964 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:01:55.965 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:01:55.966 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:01:55.966 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:02:15.967 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:02:15.968 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:02:15.969 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:02:35.969 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:02:35.970 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:02:35.971 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:02:55.971 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:02:55.972 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:02:55.973 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:03:15.974 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:03:15.975 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:03:15.975 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:03:35.976 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:03:35.977 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:03:35.978 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:03:55.978 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:03:55.979 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:03:55.980 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:04:15.980 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:04:15.981 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:04:15.982 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:04:35.982 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:04:35.983 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:04:35.984 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:04:55.984 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:04:55.985 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:04:55.986 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:05:15.987 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:05:15.988 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:05:15.988 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:05:35.989 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:05:35.990 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:05:35.991 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:05:55.991 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:05:55.992 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:05:55.993 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:06:15.993 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:06:15.994 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:06:15.995 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:06:35.995 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:06:35.996 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:06:35.997 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:06:55.998 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:06:55.999 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:06:55.999 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:07:16.000 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:07:16.001 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:07:16.002 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:07:36.002 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:07:36.003 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:07:36.004 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:07:56.004 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:07:56.005 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:07:56.006 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:08:16.006 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:08:16.007 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:08:16.008 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:08:36.008 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:08:36.009 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:08:36.010 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:08:56.011 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:08:56.011 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:08:56.012 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:09:16.013 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:09:16.014 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:09:16.015 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:09:36.015 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:09:36.016 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:09:36.017 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:09:56.017 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:09:56.018 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:09:56.019 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:10:16.019 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:10:16.020 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:10:16.021 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:10:36.022 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:10:36.022 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:10:36.023 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:10:56.024 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:10:56.025 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:10:56.025 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:11:16.026 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:11:16.027 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:11:16.028 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:11:36.028 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:11:36.029 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:11:36.030 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:11:56.030 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:11:56.031 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:11:56.032 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:12:16.032 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:12:16.033 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:12:16.034 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:12:36.034 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:12:36.035 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:12:36.036 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:12:56.037 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:12:56.038 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:12:56.038 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:13:16.039 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:13:16.040 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:13:16.041 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:13:36.041 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:13:36.042 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:13:36.043 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:13:56.043 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:13:56.044 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:13:56.045 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:14:16.045 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:14:16.046 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:14:16.047 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:14:36.047 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:14:36.048 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:14:36.049 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:14:56.050 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:14:56.050 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:14:56.051 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:15:16.052 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:15:16.053 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:15:16.053 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:15:36.054 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:15:36.055 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:15:36.056 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:15:56.056 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:15:56.057 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:15:56.058 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:16:16.058 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:16:16.059 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:16:16.060 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:16:36.060 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:16:36.061 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:16:36.062 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:16:56.063 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:16:56.064 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:16:56.064 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:17:16.065 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:17:16.066 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:17:16.067 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:17:36.067 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:17:36.068 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:17:36.069 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:17:56.069 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:17:56.070 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:17:56.071 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:18:16.071 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:18:16.072 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:18:16.073 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:18:36.074 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:18:36.074 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:18:36.075 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:18:56.076 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:18:56.077 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:18:56.077 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:19:16.078 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:19:16.079 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:19:16.079 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:19:36.080 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:19:36.081 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:19:36.082 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:19:56.082 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:19:56.083 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:19:56.084 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:20:16.084 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:20:16.085 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:20:16.086 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:20:36.086 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:20:36.087 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:20:36.088 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:20:56.089 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:20:56.089 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:20:56.090 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:21:16.091 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:21:16.092 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:21:16.092 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:21:36.093 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:21:36.094 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:21:36.094 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:21:56.095 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:21:56.096 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:21:56.097 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:22:16.097 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:22:16.098 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:22:16.099 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:22:36.099 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:22:36.100 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:22:36.101 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:22:56.101 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:22:56.102 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:22:56.103 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:23:16.103 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:23:16.104 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:23:16.105 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:23:36.106 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:23:36.107 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:23:36.107 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:23:56.108 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:23:56.109 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:23:56.109 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:24:16.110 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:24:16.111 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:24:16.112 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:24:36.112 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:24:36.113 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:24:36.114 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:24:56.114 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:24:56.115 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:24:56.116 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:25:16.116 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:25:16.117 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:25:16.118 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:25:36.119 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:25:36.119 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:25:36.120 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:25:56.120 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:25:56.121 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:25:56.122 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:26:16.122 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:26:16.123 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:26:16.124 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
+Wed May 22 12:26:36.125 [rsMgr] trying to contact localhost:27002
+Wed May 22 12:26:36.125 [rsMgr] trying to contact localhost:27003
+Wed May 22 12:26:36.126 [rsMgr] replSet info Couldn't load config yet. Sleeping 20sec and will try again.
