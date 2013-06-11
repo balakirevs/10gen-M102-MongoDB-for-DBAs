@@ -1,0 +1,1 @@
+{indexes:[{ "v" : 1, "key" : { "_id" : 1 }, "ns" : "config.shards", "name" : "_id_" }, { "v" : 1, "key" : { "host" : 1 }, "unique" : true, "ns" : "config.shards", "name" : "host_1" }]}
