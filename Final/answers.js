@@ -88,7 +88,11 @@ One way to assure people vote at most once per posting is to use this form of up
 db.postings.update( 
   { _id:… , voters:{$ne:'joe'} },
   { $inc : {votes:1}, $push : {voters:'joe'} } );
-Answer: 3
+
+Answer: db.postings.find( { "comments.flagged" : true } )
+        db.postings.update( 
+                   { _id:… , voters:{$ne:'joe'} },
+                   { $inc : {votes:1}, $push : {voters:'joe'} } );
 
 
 Final 6
@@ -164,7 +168,8 @@ Final 10
 mongos> db.elegans.ensureIndex({"N2":1,"mutant":1})
 removed == 1 + _files.size()
 mongos> 
-Answer: 10
+Answer: 2 shards are queried.
+        10 documents are scanned.
 
 Final 11
 --------
